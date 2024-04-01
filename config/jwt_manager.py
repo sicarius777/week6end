@@ -4,7 +4,7 @@ from flask_jwt_extended import JWTManager, jwt_refresh_token_required, create_ac
 app = Flask(__name__)
 
 # Configure JWT settings
-app.config['JWT_SECRET_KEY'] = 'your_secret_key'  # Change this to your own secret key
+app.config['JWT_SECRET_KEY'] = 'your_secret_key' 
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(minutes=30) 
 
 # Initialize JWTManager
